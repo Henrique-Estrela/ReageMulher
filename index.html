@@ -81,7 +81,7 @@ https://templatemo.com/tm-562-space-dynamic
               <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <h2>Faça <em>você</em> dona do seu próprio <span>negócio</span>.</h2>
                 <p>O mundo dos negócios espera por sua visão, paixão e determinação. Não espere por oportunidades, crie-as você mesma no empreendedorismo e deixe sua marca no mundo!</p>
-                <button type="button" class="main-button">Comece Agora!</button>
+                <button type="button" id="quiz-button" class="main-button">Comece Agora!</button>
               </div>
             </div>
             <div class="col-lg-6">
@@ -282,6 +282,11 @@ https://templatemo.com/tm-562-space-dynamic
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/templatemo-custom.js"></script>
+  <script>
+    document.getElementById("quiz-button").addEventListener("click", function() {
+        window.location.href = "quiz.html";
+    });
+  </script>
 
 </body>
 </html>
