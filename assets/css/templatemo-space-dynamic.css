@@ -1210,10 +1210,28 @@ Quiz
 --------------------------------------------- 
 */
 
+.left-text-quiz button{
+  position: static;
+  display: inline-block;
+  background-color: #fe3f40;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 20px 50px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  outline: none;
+  border: none;
+}
 
+.right-image-quiz img{
+  width: 510px;
+}
+.main-banner-quiz{
+  padding: 140px 0px 0px 0px !important;
 
-
-
+}
 
 
 /* 
