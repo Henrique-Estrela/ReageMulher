@@ -1232,8 +1232,25 @@ Quiz
   padding: 140px 0px 0px 0px !important;
 }
 
-section.section{
+section.section, #quiz-button-next{
   display: none;
+}
+
+#quiz-button-next{
+  margin-top: 196px;
+  position: absolute;
+  z-index: 1;
+  bottom: 60px;
+  right: 60px;
+  background-color: #fe3f40;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
 }
 
 
