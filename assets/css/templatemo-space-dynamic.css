@@ -973,8 +973,8 @@ Portfolio
 */
 
 .our-portfolio {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 95px;
+  padding-bottom: 10px;
   margin-top: 0px;
 }
 
@@ -1236,18 +1236,21 @@ section.section, #quiz-button-next{
   display: none;
 }
 
+div.center-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #quiz-button-next{
-  margin-top: 196px;
-  position: absolute;
-  z-index: 1;
-  bottom: 60px;
-  right: 60px;
+  margin: 10px 0px 8px 0px; 
   background-color: #fe3f40;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 400;
   color: #fff;
   text-transform: capitalize;
-  padding: 12px 25px;
+  padding: 17px 25px;
+  width: 25vw;
   border-radius: 23px;
   letter-spacing: 0.25px;
   border: none;
