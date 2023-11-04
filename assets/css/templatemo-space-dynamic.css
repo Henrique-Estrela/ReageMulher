@@ -1230,7 +1230,10 @@ Quiz
 }
 .main-banner-quiz{
   padding: 140px 0px 0px 0px !important;
+}
 
+section.section{
+  display: none;
 }
 
 
