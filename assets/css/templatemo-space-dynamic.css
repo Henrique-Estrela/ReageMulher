@@ -1232,7 +1232,7 @@ Quiz
   padding: 140px 0px 0px 0px !important;
 }
 
-section.section, #quiz-button-next{
+section.section, #quiz-button-next, #quiz-button-end{
   display: none;
 }
 
@@ -1242,7 +1242,7 @@ div.center-button{
   justify-content: center;
 }
 
-#quiz-button-next{
+#quiz-button-next, #quiz-button-end{
   margin: 10px 0px 8px 0px; 
   background-color: #fe3f40;
   font-size: 25px;

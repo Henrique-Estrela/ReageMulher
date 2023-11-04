@@ -1,5 +1,6 @@
 var banner_quiz = document.querySelector("#main-banner-quiz");
 var btn_next = document.querySelector("#quiz-button-next");
+var btn_end = document.querySelector("#quiz-button-end");
 var quiz = [1, 2, 3, 4, 5, 6, 7];
 
 var i = 0;
@@ -11,14 +12,12 @@ function next_query() {
             document.getElementById("query" + quiz[i - 1]).style.display = 'none';
         }
         if (i == (quiz.length-1)){
-            btn_next.textContent = "Terminar";
+            btn_next.style.display = 'none';
+            btn_end.style.display = 'block';
         }
         document.getElementById("query" + quiz[i]).style.display = 'block';
         i++
-    } else {
-        window.location.href= "resultado.html";
-    }
-
+    } 
 }
 
 function Open_close_query() {
@@ -30,6 +29,11 @@ function Open_close_query() {
 
 document.getElementById("quiz-button-next").addEventListener('click', function () {
     next_query()
+});
+
+document.getElementById("quiz-form").addEventListener("submit", function (e) {
+    e.preventDefault(); 
+    window.location.href= "resultado.html";
 });
 
 document.getElementById("quiz-button-start").addEventListener('click', function () {
