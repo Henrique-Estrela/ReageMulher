@@ -1210,6 +1210,13 @@ Quiz
 --------------------------------------------- 
 */
 
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .left-text-quiz button{
   position: static;
   display: inline-block;
@@ -1254,7 +1261,78 @@ div.center-button{
   border-radius: 23px;
   letter-spacing: 0.25px;
   border: none;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
+.range-quiz{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+datalist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3.4rem;
+  writing-mode: vertical-lr;
+  width: 200px;
+}
+
+option {
+  padding: 0;
+  transform: rotate(270deg);
+  color: #fe3f40;
+}
+
+input[type="range"] {
+  width: 50rem;
+  margin: 0;
+  background-color: #03a4ed;
+}
+
+.showed-content-quiz{
+  top: 0px;
+  background-color: #fff;
+  text-align: center;
+  border: none;
+  width: 297px;
+  height: 124px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.showed-content-quiz:hover{
+  box-shadow: 0px 0px 20px rgba(1, 238, 255, 0.363);
+  border-radius: 20px !important;
+
+}
+
+input[type="radio"] {
+  width: 297px;
+  height: 124px;
+  opacity: 0;
+  border-radius: 20px !important;
+
+}
+
+input[type="radio"]:checked {
+  border-radius: 20px !important;
+  box-shadow: 0px 0px 20px rgba(1, 238, 255, 0.555);
+  opacity: 80%;
+  position: relative;
+  z-index: -1;
+}
+label{
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+}
+
 
 
 /* 
@@ -1371,6 +1449,12 @@ responsive
   footer p {
     margin: 15px 0px 30px 0px;
   }
+  datalist {
+    gap: 1.4rem;
+  }
+  input[type="range"] {
+    width: 30rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1401,5 +1485,17 @@ responsive
   }
   .phone-info h4 span i {
     margin-left: 0px;
+  }
+}
+@media (max-width: 550px) {
+  datalist {
+    gap: 0.4rem;
+  }
+  input[type="range"] {
+    width: 20rem;
+  }
+  #quiz-button-next, #quiz-button-end{
+    font-size: 15px;
+    padding: 12px;
   }
 }
