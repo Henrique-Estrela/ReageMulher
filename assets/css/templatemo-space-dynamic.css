@@ -22,6 +22,7 @@ Table of contents
 11. search
 12. portfolio
 13. Quiz
+14.result
 
 --------------------------------------------- */
 /* 
@@ -1235,7 +1236,7 @@ Quiz
 .right-image-quiz img{
   width: 510px;
 }
-.main-banner-quiz{
+.main-banner-quiz, .main-banner-result{
   padding: 140px 0px 0px 0px !important;
 }
 
@@ -1332,6 +1333,16 @@ label{
   font-weight: 500;
   position: absolute;
 }
+
+
+/* 
+---------------------------------------------
+Result
+--------------------------------------------- 
+*/
+
+
+
 
 
 
