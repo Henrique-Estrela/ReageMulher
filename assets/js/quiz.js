@@ -19,8 +19,6 @@ function next_query() {
     } 
 }
 
-
-
 function Open_close_query() {
     banner_quiz.style.display = 'none';
     btn_next.style.display = 'block';
