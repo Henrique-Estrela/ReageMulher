@@ -63,8 +63,7 @@ function calcularPontuacao(respostas) {
   let workProfession = '';
 
   for (const profissao in works) {
-    const pontuacao = works[profissao]
-      .map((characteristicsProfession, index) =>
+    const pontuacao = works[profissao].map((characteristicsProfession, index) =>
         characteristicsProfession.reduce((total, caracteristica, letraIndex) => {
           const resposta = respostas[index];
           if (typeof resposta === 'string') {
@@ -84,7 +83,6 @@ function calcularPontuacao(respostas) {
 
   return workProfession;
 }
-
 const workProfession = calcularPontuacao(responsesUser);
 
 document.getElementById('profissao-sugerida').textContent = workProfession;
