@@ -46,17 +46,21 @@ const works = {
     ],
   };
   
-  const perguntas = [
-    'De 0 a 10, o quanto você se sente confortável em trabalhar diretamente com o público?',
-    'Você prefere:\n a) Trabalhar sozinha\n b) Em equipe\n c) Depende da situação',
-    'Quais destas opções você acha mais interessante?\n a) Vendas e comércio\n b) Serviços\n c) Produção de produtos\n d) Tecnologia e inovação',
-    'Como você se sente em relação a riscos financeiros?\n a) Evito ao máximo\n b) Estou disposta a correr alguns riscos se for necessário\n c) Adoro desafios e riscos são parte do jogo',
-    'Qual destes ambientes você prefere?\n a) Escritório\n b) Loja física\n c) Online (trabalhar remotamente)\n d) Ambiente externo (por exemplo, eventos, feiras)',
-    'Em relação à rotina, você:\n a) Prefere uma rotina estruturada\n b) Gosta de variedade e mudança constante\n c) Precisa de flexibilidade no seu horário',
-    'Como você se sente em relação a liderança?\n a) Adoro liderar equipes\n b) Prefiro trabalhar sozinha ou com uma equipe pequena\n c) Não tenho certeza ainda',
-  ];
-  
-  const responsesUser = [1, 'b', 'b', 'b', 'b', 'b', 'b'];
+const dic = {
+    'a': 0,
+    'b': 1,
+    'c': 2,
+    'd': 4
+  };
+
+const responsesUser = [6, dic['a'], dic['b'], dic['c'], dic['b'], dic['a'], dic['a']];
+
+
+
+const workProfession = calcularPontuacao(responsesUser);
+
+
+
 
 function calcularPontuacao(respostas) {
   let bestScore = -Infinity;
@@ -83,7 +87,11 @@ function calcularPontuacao(respostas) {
 
   return workProfession;
 }
-const workProfession = calcularPontuacao(responsesUser);
+
+
+
+
+
 
 document.getElementById('profissao-sugerida').textContent = workProfession;
 var textResult = document.getElementById("text-result");

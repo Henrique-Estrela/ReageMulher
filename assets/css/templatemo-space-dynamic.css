@@ -1341,6 +1341,27 @@ Result
 --------------------------------------------- 
 */
 
+.cursos-result img {
+  top: 0px;
+  text-align: center;
+  object-fit: fill;  
+  border: none;
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 4rem;
+}
+
+
+.cursos-result p{
+  margin: 1rem;
+  color: #fff;
+  font-size: 2em;
+  font-weight: 500;
+}
+
 
 
 
