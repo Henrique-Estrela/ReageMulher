@@ -1314,7 +1314,9 @@ input[type="range"] {
 }
 
 input[type="radio"] {
-  width: 297px;
+  width: 200px;
+  display: flex;
+  gap: 2rem;
   height: 124px;
   opacity: 0;
   border-radius: 20px !important;
