@@ -2,13 +2,20 @@
   var btn_next = document.querySelector("#quiz-button-next");
   var btn_end = document.querySelector("#quiz-button-end");
 
+
+  
   const profissao_sugerida = document.querySelector("#profissao-sugerida");
   const textResult = document.querySelector("#text-result" );
   const imgResult = document.querySelector("#img-result");
+  const curso1 = document.querySelector("#curso1");
+  const curso2 = document.querySelector("#curso2");
+  const curso3 = document.querySelector("#curso3");
+
+
+
 
   var quiz = [1, 2, 3, 4, 5, 6, 7];
   var i = 0;
-  var j = 0;
 
 
   function next_query() {  
